@@ -1,0 +1,102 @@
+/* Ajouter un icone à chaque paragraphe */
+p:before {
+  content: "\2022";
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Même chose, mais sans les pseudo-éléments */
+p {
+  position: relative;
+  padding-left: 1em;
+}
+p:before {
+  content: "\2022";
+  color: #000;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* J'ai dit sans pseudo-élément !! */
+p {
+  position: relative;
+  padding-left: 1em;
+}
+p:before {
+  content: "\2022";
+  color: #000;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* HAHA ok merci ! */
+/* Arrête !! */
+
+/* Requête média pour téléphone */
+@media screen and (max-width: 480px) {
+  p {
+    padding-left: 0;
+  }
+  p:before {
+    left: 0;
+    top: 0;
+  }
+}
+
+/* Requête média pour tablette */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  p {
+    padding-left: 0;
+  }
+  p:before {
+    left: 0;
+    top: 0;
+  }
+}
+
+/* Requête média pour ordinateur */
+@media screen and (min-width: 1025px) {
+  p {
+    padding-left: 0;
+  }
+  p:before {
+    left: 0;
+    top: 0;
+  }
+}
+
+/* Remarquer qu'il a offert toutes les requêtes après la première par lui-même ;-) */
+
+
+/* Animation pour balle rebondissante de taille moyenne et de couleur rouge */
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 100px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+/* C'est ça qui est ça ... */

@@ -1,0 +1,36 @@
+<!-- Détail des notes des étudiants -->
+<test>
+    <etudiant>
+        <nom>John</nom>
+        <prenom>Doe</prenom>
+        <note>12</note>
+    </etudiant>
+    <etudiant>
+        <nom>John</nom>
+        <prenom>Doe</prenom>
+        <note>12</note>
+    </etudiant>
+    <etudiant>
+        <nom>John</nom>
+        <prenom>Doe</prenom>
+        <note>12</note>
+    </etudiant>
+</test>
+<!-- OK, mais sans plus... -->
+
+<!-- Détail des produits -->
+<produits>
+    <produit>
+        <nom>Produit 1</nom>
+        <prix>12</prix>
+    </produit>
+    <produit>
+        <nom>Produit 2</nom>
+        <prix>12</prix>
+    </produit>
+    <produit>
+        <nom>Produit 3</nom>
+        <prix>12</prix>
+    </produit>
+</produits>
+<!-- mieux... -->
